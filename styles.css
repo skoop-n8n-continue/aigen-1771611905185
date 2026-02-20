@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #00b7af;
-    --bg-color: #10181f;
+    --primary-color: #ffd700;
+    --bg-color: #0f0f0f;
     --text-color: #ffffff;
-    --secondary-text: #6a7071;
+    --secondary-text: #a0a0a0;
 }
 
 * {
@@ -34,6 +34,8 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     letter-spacing: -2px;
+    color: var(--primary-color);
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
 .content p {
@@ -48,6 +50,7 @@ body {
     background-color: var(--primary-color);
     margin: 2rem auto 0;
     border-radius: 4px;
+    box-shadow: 0 0 15px var(--primary-color);
 }
 
 /* Animations */
