@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #00b7af;
+    --bg-color: #10181f;
+    --text-color: #ffffff;
+    --secondary-text: #6a7071;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: var(--secondary-text);
+    font-weight: 400;
+}
+
+.accent-bar {
+    width: 100px;
+    height: 8px;
+    background-color: var(--primary-color);
+    margin: 2rem auto 0;
+    border-radius: 4px;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.slide-up {
+    animation: slideUp 1.2s ease-out 0.5s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 4rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+}
