@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #ff3131;
+    --primary-color: #ffd700;
     --bg-color: #0f0f0f;
     --text-color: #ffffff;
     --secondary-text: #a0a0a0;
@@ -35,7 +35,7 @@ body {
     margin-bottom: 1rem;
     letter-spacing: -2px;
     color: var(--primary-color);
-    text-shadow: 0 0 20px rgba(255, 49, 49, 0.5);
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
 .content p {
